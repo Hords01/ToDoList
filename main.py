@@ -33,7 +33,13 @@ def veri_kaydet(gorevler): # görev listesini json dosyasına kaydet
 
 def gorev_ekle(gorevler): # yeni gorev ekleme fonksiyonu
 
-    baslik = input("Görev Başlığı: ").strip() # görev başlığını kullanıcıdan alma / strip ile temiz girdi alma
+    while True: # sonsuz döngü ile boş olmayan bir başlık alınana kadar başlık iste
+        baslik = input("Görev Başlığı: ").strip() # görev başlığı alma kullanıcıdan
+        if baslik: # eğer başlık boş değilse döngüden çık
+            break
+        else:
+            print("❌ Görev Başlığı boş olamaz. Lütfen bir başlık giriniz!") # boş olmayan bir başlık için uyarı mesajı
+
     aciklama = input("Açıklama(Boş Bırakılabilir): ").strip() # kullanıcıdan açıklama alma
 
     yeni_gorev = { # yeni görevin bileşenleri/ sözlüğü oluşturulur
@@ -252,6 +258,7 @@ if __name__ == "__main__": # main çalıştır
         print("*" * 40)
 
         secim = input("İlgili Başlık Numarasını Giriniz: ").strip() # ilgili görev fonksiyonunun numarsını girdi olarak kullanıcıdan alma
+
         if secim == "1":
             gorev_ekle(gorevler)
         elif secim == "2":

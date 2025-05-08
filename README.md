@@ -21,6 +21,15 @@ Her iki uygulama da görevleri JSON formatında kaydeder ve işler. Konsol ve we
 
 ---
 
+## 🧱 Proje Yapısı
+
+📦 ToDoList/
+├── main.py # Konsol tabanlı görev yöneticisi
+├── streamlit_app.py # Web tabanlı görev yöneticisi (Streamlit)
+├── veri_isleme.py # JSON veri işlemleri modülü
+├── konsol_gorevler.json # Konsol uygulamasına ait veri dosyası
+└── gorevler.json # Web arayüzüne ait veri dosyası
+
 ## 🖥️ Konsol Uygulaması (`main.py`)
 
 - **Kullanım:** Terminal/Konsol üzerinden görev yönetimi sağlar.
@@ -39,10 +48,3 @@ Her iki uygulama da görevleri JSON formatında kaydeder ve işler. Konsol ve we
 ### Web Arayüzünü Başlatmak İçin:
 ```bash
 streamlit run Streamlit_app.py
-
-📦 ToDoList/
-├── main.py                # Konsol tabanlı görev yöneticisi
-├── streamlit_app.py       # Web tabanlı görev yöneticisi (Streamlit)
-├── veri_isleme.py         # JSON veri işlemleri modülü
-├── konsol_gorevler.json   # Konsol uygulamasına ait veri dosyası
-└── gorevler.json          # Web arayüzüne ait veri dosyası

@@ -1,0 +1,17 @@
+[
+    {
+        "baslik": "Market Alışverişi",
+        "aciklama": "muz, kağıt, ekmek",
+        "durum": "tamamlandi"
+    },
+    {
+        "baslik": "sınavlar",
+        "aciklama": "stokastik, istatistik, python\n",
+        "durum": "aktif"
+    },
+    {
+        "baslik": "projeler",
+        "aciklama": "excel, autocad, photoshop, python",
+        "durum": "aktif"
+    }
+]

@@ -1,11 +1,12 @@
 # 🗂️ Görev Yönetim Sistemi (To-Do List)
 
-Bu proje, iki farklı şekilde görev takibi yapmanıza olanak tanır:
+Bu proje, iki farklı şekilde görev takibi yapımına olanak tanır:
 
 - **Konsol tabanlı kullanım (`main.py`)**
 - **Web arayüzlü kullanım (`streamlit_app.py`)**
 
 Her iki uygulama da görevleri JSON formatında kaydeder ve işler. Konsol ve web sürümleri farklı veri dosyaları kullanır ve birbirinden bağımsız çalışır.
+Dosyalar Yerel Olarak Kaydedilir ve uygulamadan çıkılması halinde json formatında ki veriler kaybedilmez.
 
 ---
 
@@ -14,9 +15,10 @@ Her iki uygulama da görevleri JSON formatında kaydeder ve işler. Konsol ve we
 ### ✅ Ortak Özellikler
 
 - Görev ekleme
-- Görevleri listeleme
-- Görevleri tamamlama
-- Görev silme
+- Görevleri Listeleme
+- Görevleri Tamamlama
+- Görevleri Düzenleme
+- Görevleri silme
 - JSON tabanlı veri saklama
 
 ---
